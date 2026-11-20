@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Personality Machine</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <main class="welcome-screen" id="welcome-screen">
+    <div class="top-label">THINGLABZ PRESENTS</div>
+
+    <section class="welcome-content">
+      <p class="eyebrow">AN EXPERIMENT IN BEING HUMAN</p>
+      <h1>THE<br><span>PERSONALITY</span><br>MACHINE</h1>
+      <p class="description">
+        We have questions. You have answers.
+        Let's see what that says about you.
+      </p>
+      <button id="start-button">
+        DISCOVER YOUR TYPE <span>→</span>
+      </button>
+      <p class="disclaimer">
+        15 QUESTIONS · 8 POSSIBLE PERSONALITIES · 0 SCIENTIFIC CREDENTIALS
+      </p>
+    </section>
+
+    <div class="bottom-label">PLEASE THINK BEFORE YOU ANSWER. OR DON'T.</div>
+  </main>
+
+  <main class="quiz-screen hidden" id="quiz-screen">
+    <header class="quiz-header">
+      <span>THE PERSONALITY MACHINE</span>
+      <span id="question-count">QUESTION 1 / 15</span>
+    </header>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <section class="question-container">
+      <p class="eyebrow" id="question-category">THE SCENARIO</p>
+      <h2 id="question-text"></h2>
+      <p class="answer-instruction">Choose the answer that feels most like you.</p>
+
+      <div class="answers" id="answers"></div>
+
+      <button id="next-button" disabled>NEXT QUESTION →</button>
+    </section>
+  </main>
+</body>
+</html>
